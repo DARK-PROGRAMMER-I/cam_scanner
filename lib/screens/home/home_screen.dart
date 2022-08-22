@@ -1,5 +1,6 @@
 import 'package:cam_scanner/utils/colors.dart';
 import 'package:cam_scanner/utils/dimensions.dart';
+import 'package:cam_scanner/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 part 'widgets/nav_ bar.dart';
@@ -22,16 +23,35 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               SizedBox(height: Dimensions.height30,),
               NavBar(),
-              SizedBox(height: Dimensions.height15,),
+              SizedBox(height: Dimensions.height25,),
               Container(
                 child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           IconImageCircle(
-                            backColor: ,
-                            iconColor: ,
-                            path: ,
+                            backColor: AppColors.greyColor,
+                            iconColor: AppColors.mainColor,
+                            path: 'scan.svg',
+                            fieldname: 'Smart Scan',
+                          ),
+                          IconImageCircle(
+                            backColor: AppColors.greyColor,
+                            iconColor: AppColors.mainColor,
+                            path: 'image.svg',
+                            fieldname: 'Import Images',
+                          ),
+                          IconImageCircle(
+                            backColor: AppColors.greyColor,
+                            iconColor: AppColors.blueColor,
+                            path: 'folder.svg',
+                            fieldname: 'Import Files',
+                          ),IconImageCircle(
+                            backColor: AppColors.greyColor,
+                            iconColor: AppColors.blueColor,
+                            path: 'id_card.svg',
+                            fieldname: 'Id Card',
                           )
                         ],
                       )
