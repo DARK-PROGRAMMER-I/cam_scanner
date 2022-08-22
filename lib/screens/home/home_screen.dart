@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           IconImageCircle(
                             backColor: AppColors.greyColor,
