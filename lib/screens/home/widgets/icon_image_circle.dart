@@ -11,7 +11,7 @@ class IconImageCircle extends StatelessWidget {
         color: Colors.white,
         shape: BoxShape.circle
       ),
-      child: SvgPicture.asset('assets/scan.svg', color: AppColors.mainColor, height: Dimensions.width20, width: Dimensions.height20,)
+      child: Center(child: SvgPicture.asset('assets/scan.svg', color: AppColors.mainColor, height: Dimensions.width30, width: Dimensions.height30,))
       ,
     );
   }
