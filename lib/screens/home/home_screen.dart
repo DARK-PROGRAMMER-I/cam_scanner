@@ -22,6 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: Dimensions.height30,),
               NavBar(),
 
+              Container(
+                child: Column(
+
+                ),
+              )
 
             ],
           ),
