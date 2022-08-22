@@ -28,7 +28,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Row(
                         children: [
-                          IconImageCircle()
+                          IconImageCircle(
+                            backColor: ,
+                            iconColor: ,
+                            path: ,
+                          )
                         ],
                       )
                     ],
