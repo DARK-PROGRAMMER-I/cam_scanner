@@ -2,7 +2,7 @@ import 'package:cam_scanner/utils/colors.dart';
 import 'package:cam_scanner/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+part 'widgets/nav_ bar.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
