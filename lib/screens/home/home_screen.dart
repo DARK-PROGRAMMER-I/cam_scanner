@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         enabledBorder: InputBorder.none,
                         disabledBorder: InputBorder.none,
                         hintText: 'Search',
-                        hintStyle: TextStyle(),
+                        hintStyle: TextStyle(fontSize: Dimensions.height20),
                         prefixIcon: Icon(Icons.search, size: Dimensions.height30,),
                         filled: true,
                         fillColor: AppColors.blackColor,
