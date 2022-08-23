@@ -18,14 +18,17 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: Dimensions.width20, vertical: Dimensions.height30),
-          child: Column(
-            children: [
-              SizedBox(height: Dimensions.height30,),
-              NavBar(),
-              SizedBox(height: Dimensions.height25,),
-              Container(
+        child: Column(
+          children: [
+            SizedBox(height: Dimensions.height60,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: Dimensions.width20,),
+              child: NavBar(),
+            ),
+            SizedBox(height: Dimensions.height25,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: Dimensions.width20, vertical: Dimensions.height30),
+              child: Container(
                 child: Column(
                     children: [
 
@@ -63,41 +66,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                 ),
-              )
+              ),
+            ),
+            Container(
+              height: Dimensions.pageHeight,
+              decoration: ,
+            )
 
-            ],
-          ),
+          ],
         ),
       ),
     );
   }
 }
-// Row(
-//                         mainAxisAlignment: MainAxisAlignment.spaceAround,
-//                         children: [
-//                           IconImageCircle(
-//                             backColor: AppColors.greyColor,
-//                             iconColor: AppColors.mainColor,
-//                             path: 'scan.svg',
-//                             fieldname: 'Smart Scan',
-//                           ),
-//                           IconImageCircle(
-//                             backColor: AppColors.greyColor,
-//                             iconColor: AppColors.mainColor,
-//                             path: 'image.svg',
-//                             fieldname: 'Import Images',
-//                           ),
-//                           IconImageCircle(
-//                             backColor: AppColors.greyColor,
-//                             iconColor: AppColors.blueColor,
-//                             path: 'folder.svg',
-//                             fieldname: 'Import Files',
-//                           ),IconImageCircle(
-//                             backColor: AppColors.greyColor,
-//                             iconColor: AppColors.blueColor,
-//                             path: 'id_card.svg',
-//                             fieldname: 'Id Card',
-//                           )
-//                         ],
-//                       ),
-//                       SizedBox(height: Dimensions.height25,),
