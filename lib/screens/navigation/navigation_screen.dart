@@ -32,23 +32,25 @@ class _NavigationScreenState extends State<NavigationScreen> {
           data:Theme.of(context).copyWith(
             canvasColor: AppColors.containerBackgroundColor,),
           child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, size: Dimensions.icon30, ),
+              icon: Icon(Icons.home, size: Dimensions.icon30, color: navProvider.index == 0 ? AppColors.mainColor: AppColors.mainWhiteColor),
               label: 'Home',
 
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.file_copy, size: Dimensions.icon30, ),
+              icon: Icon(Icons.file_copy, size: Dimensions.icon30, color: navProvider.index == 1 ? AppColors.mainColor: AppColors.mainWhiteColor ),
               label: 'Files',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.border_all, size: Dimensions.icon30,),
+              icon: Icon(Icons.border_all, size: Dimensions.icon30, color: navProvider.index == 2 ? AppColors.mainColor: AppColors.mainWhiteColor),
               label: 'Tools',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person, size: Dimensions.icon30,),
+              icon: Icon(Icons.person, size: Dimensions.icon30, color: navProvider.index == 3 ? AppColors.mainColor: AppColors.mainWhiteColor),
               label: 'Me',
+
             ),
           ],
           onTap: (int index){
