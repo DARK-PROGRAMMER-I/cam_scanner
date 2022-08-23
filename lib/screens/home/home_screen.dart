@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 part 'widgets/nav_ bar.dart';
 part 'widgets/icon_image_circle.dart';
+part 'widgets/icon_row.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -27,34 +28,38 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 child: Column(
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          IconImageCircle(
-                            backColor: AppColors.greyColor,
-                            iconColor: AppColors.mainColor,
-                            path: 'scan.svg',
-                            fieldname: 'Smart Scan',
-                          ),
-                          IconImageCircle(
-                            backColor: AppColors.greyColor,
-                            iconColor: AppColors.mainColor,
-                            path: 'image.svg',
-                            fieldname: 'Import Images',
-                          ),
-                          IconImageCircle(
-                            backColor: AppColors.greyColor,
-                            iconColor: AppColors.blueColor,
-                            path: 'folder.svg',
-                            fieldname: 'Import Files',
-                          ),IconImageCircle(
-                            backColor: AppColors.greyColor,
-                            iconColor: AppColors.blueColor,
-                            path: 'id_card.svg',
-                            fieldname: 'Id Card',
-                          )
+
+                      IconsRow(
+                        iconDescription: [
+                          'Smart Scan',
+                          'Import Images',
+                          'Import Files',
+                          'Id Card',
                         ],
-                      )
+                        iconPaths: [
+                          'scan.svg',
+                          'image.svg',
+                          'folder.svg',
+                          'id_card.svg',
+                        ],
+                      ),
+                      SizedBox(height: Dimensions.height25,),
+                      IconsRow(
+                        iconDescription: [
+                          'To Text',
+                          'Scan To Excel',
+                          'Sign',
+                          'All',
+                        ],
+                        iconPaths: [
+                          'to_text.svg',
+                          'excel.svg',
+                          'sign.svg',
+                          'id_card.svg',
+                        ],
+                        back3: AppColors.mainColor,
+                        icon3: AppColors.,
+                      ),
                     ],
                 ),
               )
@@ -66,3 +71,32 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+// Row(
+//                         mainAxisAlignment: MainAxisAlignment.spaceAround,
+//                         children: [
+//                           IconImageCircle(
+//                             backColor: AppColors.greyColor,
+//                             iconColor: AppColors.mainColor,
+//                             path: 'scan.svg',
+//                             fieldname: 'Smart Scan',
+//                           ),
+//                           IconImageCircle(
+//                             backColor: AppColors.greyColor,
+//                             iconColor: AppColors.mainColor,
+//                             path: 'image.svg',
+//                             fieldname: 'Import Images',
+//                           ),
+//                           IconImageCircle(
+//                             backColor: AppColors.greyColor,
+//                             iconColor: AppColors.blueColor,
+//                             path: 'folder.svg',
+//                             fieldname: 'Import Files',
+//                           ),IconImageCircle(
+//                             backColor: AppColors.greyColor,
+//                             iconColor: AppColors.blueColor,
+//                             path: 'id_card.svg',
+//                             fieldname: 'Id Card',
+//                           )
+//                         ],
+//                       ),
+//                       SizedBox(height: Dimensions.height25,),
