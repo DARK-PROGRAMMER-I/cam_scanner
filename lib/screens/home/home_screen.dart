@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   topLeft: Radius.circular(Dimensions.radius25),
                 ),
               ),
-              child: Image(image: AssetImage('assets/gifs/1.gif')),
+              child: Image(image: AssetImage('assets/gifs/1.gif'), h),
             )
 
           ],
