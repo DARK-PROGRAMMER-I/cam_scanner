@@ -9,7 +9,7 @@ const secondaryColor = Colors.grey;
 
 class AppColors{
   static final Color blackColor = Color.fromRGBO(18, 18, 18, 1);
-  static final Color mainColor = Color.fromRGBO(97, 197, 187, 1.0);
+  static final Color mainColor = Color.fromRGBO(79, 168, 158, 1.0);
   static final Color greyColor = const Color(0xff4f4f48);
   static final Color blueColor = const Color(0xff5885f6);
   static final Color primaryColor = const Color(0xff0c4096);

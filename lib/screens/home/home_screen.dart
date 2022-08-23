@@ -83,7 +83,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppColors.mainColor,
+        child: SvgPicture.asset('assets/camera.svg', color: AppColors.mainWhiteColor, height: Dimensions.height35 , width: Dimensions.width35,),
+        onPressed: (){},
+      ),
     );
   }
 }
