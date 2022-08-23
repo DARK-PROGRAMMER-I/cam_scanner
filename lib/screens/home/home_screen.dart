@@ -3,7 +3,7 @@ import 'package:cam_scanner/utils/dimensions.dart';
 import 'package:cam_scanner/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-part 'widgets/nav_ bar.dart';
+part 'widgets/app_ bar.dart';
 part 'widgets/icon_image_circle.dart';
 part 'widgets/icon_row.dart';
 class HomeScreen extends StatefulWidget {
@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: Dimensions.height60,),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: Dimensions.width20,),
-              child: NavBar(),
+              child: AppBar(),
             ),
             SizedBox(height: Dimensions.height25,),
             Padding(
