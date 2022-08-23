@@ -27,30 +27,35 @@ class _NavigationScreenState extends State<NavigationScreen> {
     final navProvider = Provider.of<NavProvider>(context);
     return Scaffold(
       body: _screens[navProvider.index!],
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: ''
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.file_copy),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.border_all),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: '',
-          ),
-        ],
-        onTap: (int index){
-          navProvider.getIndex(index);
-        },
-        fixedColor: AppColors.whiteColor,
-        backgroundColor: AppColors.whiteColor,
+      bottomNavigationBar: Theme(
+          data:Theme.of(context).copyWith(
+            canvasColor: AppColors.containerBackgroundColor,),
+          child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home, ),
+              label: '',
+
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.file_copy),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.border_all),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: '',
+            ),
+          ],
+          onTap: (int index){
+            navProvider.getIndex(index);
+          },
+
+          selectedItemColor: AppColors.mainColor,
+        ),
       ),
     );
   }
