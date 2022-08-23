@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           'sign.svg',
                           'all.svg',
                         ],
-                        back3: AppColors.mainColor,
+                        back3: AppColors.blueColor,
                         icon3: AppColors.mainWhiteColor,
                         back4: AppColors.mainWhiteColor,
                       ),
@@ -70,7 +70,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Container(
               height: Dimensions.pageHeight,
-              decoration: ,
+              decoration: BoxDecoration(
+                color: AppColors.containerBackgroundColor,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(Dimensions.radius25),
+                  topLeft: Radius.circular(Dimensions.radius25),
+                )
+              ),
+
             )
 
           ],
