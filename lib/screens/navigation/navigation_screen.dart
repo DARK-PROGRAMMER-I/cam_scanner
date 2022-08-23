@@ -54,6 +54,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           onTap: (int index){
             navProvider.getIndex(index);
           },
+            backgroundColor: AppColors.mainWhiteColor,
           selectedItemColor: AppColors.mainColor,
           currentIndex: navProvider.index!,
         ),

@@ -10,6 +10,10 @@ class ToolsScreen extends StatefulWidget {
 class _ToolsScreenState extends State<ToolsScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Center(
+        child: Text('Tools Screen', style: TextStyle(color: Colors.white),),
+      ),
+    );
   }
 }
