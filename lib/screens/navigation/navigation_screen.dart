@@ -55,6 +55,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           },
 
           selectedItemColor: AppColors.mainColor,
+          currentIndex: navProvider.index!,
         ),
       ),
     );
