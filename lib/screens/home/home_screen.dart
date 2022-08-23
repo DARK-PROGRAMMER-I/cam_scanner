@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              height: Dimensions.pageHeight,
+              height: Dimensions.pageHeight - Dimensions.height300,
               decoration: BoxDecoration(
                 color: AppColors.containerBackgroundColor,
                 borderRadius: BorderRadius.only(
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   topLeft: Radius.circular(Dimensions.radius25),
                 ),
               ),
-              child: Image(image: AssetImage('assets/gifs/1.gif'), h),
+
             )
 
           ],
