@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           'id_card.svg',
                         ],
                       ),
-                      SizedBox(height: Dimensions.height25,),
+                      SizedBox(height: Dimensions.height30,),
                       IconsRow(
                         iconDescription: [
                           'To Text',
@@ -55,10 +55,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           'to_text.svg',
                           'excel.svg',
                           'sign.svg',
-                          'id_card.svg',
+                          'all.svg',
                         ],
                         back3: AppColors.mainColor,
-                        icon3: AppColors.,
+                        icon3: AppColors.mainWhiteColor,
+                        back4: AppColors.mainWhiteColor,
                       ),
                     ],
                 ),
