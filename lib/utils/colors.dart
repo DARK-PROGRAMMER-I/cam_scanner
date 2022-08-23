@@ -13,7 +13,7 @@ class AppColors{
   static final Color greyColor = const Color(0xff4f4f48);
   static final Color blueColor = const Color(0xff5885f6);
   static final Color primaryColor = const Color(0xff0c4096);
-  static final Color containerBackgroundColor= const Color(0xff5d5d5d);
+  static final Color containerBackgroundColor= const Color(0xff424242);
   static final Color lightBackgroundBlue = const Color(0xffd5ebff);
   static final Color lightBackgroundgreen = const Color(0xffe3ffee);
   static final Color whiteColor =  Colors.white70 ;
