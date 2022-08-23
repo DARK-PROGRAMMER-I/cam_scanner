@@ -39,22 +39,22 @@ class _NavigationScreenState extends State<NavigationScreen> {
 
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.file_copy, ),
+              icon: Icon(Icons.file_copy, size: Dimensions.icon30, ),
               label: 'Files',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.border_all),
+              icon: Icon(Icons.border_all, size: Dimensions.icon30,),
               label: 'Tools',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.person, size: Dimensions.icon30,),
               label: 'Me',
             ),
           ],
           onTap: (int index){
             navProvider.getIndex(index);
           },
-            backgroundColor: AppColors.mainWhiteColor,
+
           selectedItemColor: AppColors.mainColor,
           currentIndex: navProvider.index!,
         ),
