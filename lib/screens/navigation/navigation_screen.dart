@@ -26,6 +26,14 @@ class _NavigationScreenState extends State<NavigationScreen> {
     final navProvider = Provider.of<NavProvider>(context);
     return Scaffold(
       body: _screens[navProvider.index!],
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+
+        ],
+        onTap: (int index){
+          navProvider.getIndex(index);
+        },
+      ),
     );
   }
 }
