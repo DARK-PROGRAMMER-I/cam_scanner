@@ -3,6 +3,7 @@ import 'package:cam_scanner/screens/home/home_screen.dart';
 import 'package:cam_scanner/screens/profile/profile_screen.dart';
 import 'package:cam_scanner/screens/tools/tools_screen.dart';
 import 'package:cam_scanner/utils/colors.dart';
+import 'package:cam_scanner/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -33,27 +34,26 @@ class _NavigationScreenState extends State<NavigationScreen> {
           child: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, ),
-              label: '',
+              icon: Icon(Icons.home, size: Dimensions.icon30, ),
+              label: 'Home',
 
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.file_copy),
-              label: '',
+              icon: Icon(Icons.file_copy, ),
+              label: 'Files',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.border_all),
-              label: '',
+              label: 'Tools',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: '',
+              label: 'Me',
             ),
           ],
           onTap: (int index){
             navProvider.getIndex(index);
           },
-
           selectedItemColor: AppColors.mainColor,
           currentIndex: navProvider.index!,
         ),
