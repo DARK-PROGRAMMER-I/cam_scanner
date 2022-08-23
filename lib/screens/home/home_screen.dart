@@ -75,9 +75,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(Dimensions.radius25),
                   topLeft: Radius.circular(Dimensions.radius25),
-                )
+                ),
               ),
-
+              child: Image(image: AssetImage('assets/gifs/1.gif')),
             )
 
           ],
